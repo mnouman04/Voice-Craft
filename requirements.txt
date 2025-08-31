@@ -1,0 +1,38 @@
+# === PDF to Audiobook Converter Requirements ===
+# Compatible with Python 3.9 to 3.11 (due to Coqui TTS/PyTorch limitations)
+
+# --- PDF Processing ---
+PyPDF2>=3.0.0
+pdfplumber>=0.9.0
+
+# --- Text-to-Speech Engines ---
+pyttsx3>=2.90
+edge-tts>=6.1.0
+
+# --- Coqui TTS and PyTorch (for voice cloning) ---
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+TTS>=0.22.0
+
+# --- Audio Processing ---
+numpy>=1.21.6,<1.28.0
+scipy>=1.9.0,<1.12.0
+soundfile>=0.12.0
+librosa>=0.10.0
+numba>=0.56.0
+
+# --- Audio Backend ---
+cffi>=1.15.0
+pycparser>=2.21
+
+# --- System Utilities ---
+setuptools>=65.0.0
+wheel>=0.37.0
+pathlib2>=2.3.7
+
+# --- Optional Enhancements ---
+psutil>=5.9.0          # System resource monitoring
+mutagen>=1.46.0        # Audio metadata handling
+colorama>=0.4.6        # Colored terminal output
+tqdm>=4.64.0           # Progress bars
